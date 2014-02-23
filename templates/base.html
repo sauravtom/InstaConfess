@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} InstaConfess</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="description" content="">
+    <meta name="" >
+    <script src='/static/js/jquery.min.js'></script>
+  </head>
+  <body>
+      <div class='header'>
+            <a href="/">InstaConfess</a>
+      </div>
+      
+      <div class="content">
+          {% block content %}{% endblock %}
+      </div>
+      
+      <div class="footer">
+        <a href='/'>About</a>
+        <a href='/'>Terms and Condition</a>
+        <a href='/'>Moarr</a>
+        <p>2014 Stomatrix All Rights Reserved</p>
+      </div>
+
+      <script src='/static/js/bootstrap.min.js'></script>
+      <script src='/static/js/prefixfree.min.js'></script>
+
+  </body>
+</html>

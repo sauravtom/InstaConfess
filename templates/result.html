@@ -1,0 +1,21 @@
+{% extends "templates/base.html" %}
+
+
+{% block title %}fb{% endblock %}
+
+{% block content %}
+
+<!--{{msg}}-->
+
+<div class='result'>
+	{% if id %}
+		<p>Your confession has been posted on facebook, Here's the <a href="https://www.fb.com/instaconfess/posts/{{id}}">link</a> <br></p>
+		<br>
+		<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-post" data-href="https://www.facebook.com/instaconfess/posts/{{id}}" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/instaconfess/posts/609765939106328">Post</a> by <a href="https://www.facebook.com/instaconfess">Instaconfess</a>.</div></div>
+	{% else %}
+		<img src="http://www.2expertsdesign.com/wp-content/uploads/2009/12/favorite-tweets-dec-20-dec-26-2009/5-404-error-page-designs.jpg">
+	{% endif %}
+</div>
+
+{% endblock %}

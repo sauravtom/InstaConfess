@@ -1,0 +1,113 @@
+/*===================,
+        Globals      |
+=====================*/
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+  //font-family: 'Pacifico', cursive;	
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+.modal-body,.modal-footer{
+	text-align: center;
+}
+.modal-body>noscript>iframe{
+	border:4px solid;
+}
+.submit_btn{
+	position: absolute;
+	top:50px;
+}
+.hr{
+	width:99%;
+	margin:5px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.header>a{
+	text-decoration: none;
+	color:black;
+}
+.bread{
+	font-size: 86%;
+	background: rgba(215, 206, 206, 1);
+	opacity: 0.9;
+	color:white;
+	padding:4px;
+	border-radius: 5px;
+	text-align: center;
+}
+.bread>a{
+	color:rgb(123, 116, 116);
+}
+/*===================,
+        header       |
+=====================*/
+.header{
+	font-family: 'Pacifico', cursive;
+	font-size: 220%;
+	width:100%;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+/*===================,
+        content      |
+=====================*/
+.content{
+	margin:0 auto;
+	width: 80%;
+	min-width: 50px;
+	height: auto;
+	min-height: 700px;
+	margin-bottom: 20px;
+}
+
+/*Form*/
+.content>form{
+	margin: 0 auto;
+	margin-top:20px;
+	text-align: center;
+	padding:20px;
+	padding-top:10px; 
+	border-radius: 5px;
+	border: 3px solid rgba(233, 226, 226, 0.32);
+	margin-bottom: 10px;
+}
+fieldset{
+	width:60%;
+	margin:0 auto;
+}
+#ta{
+	height:200px;
+}
+.result{
+	text-align: center;
+}
+/*===================,
+        footer       |
+=====================*/
+.footer{
+	text-align: center;
+	margin-top: 20px;
+	//position: absolute;
+	//bottom: 0;
+	width:80%;
+	font-size: 75%;
+	margin: 0 auto;
+}
+.footer>a{
+	padding:0 60px 0 60px;
+	color:black;
+}
+.footer>p{
+	padding-top:20px;
+}
+

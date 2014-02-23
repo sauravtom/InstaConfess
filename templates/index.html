@@ -1,0 +1,50 @@
+{% extends "templates/base.html" %}
+
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<script>
+	var RecaptchaOptions = {
+	    theme : 'white'
+	 };
+</script>
+
+<p class='bread'>Enter your confession in the form below and it will be instantaneously be posted to our <a href="http://fb.com/instaconfess" target="_blank">facebook page</a></p>
+
+<form id='form' class="form-horizontal" method='POST' action='/'>
+	<fieldset>
+
+		<!-- Textarea -->
+		<div class="form-group">                
+		    <textarea id='ta' class="form-control" name="message" placeholder="Your confession goes here"></textarea>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <input name="tags" type="text" placeholder="Comma separated tags (optional)" class="form-control input-md">
+		</div>
+		<div class="form-group">
+		<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LdlBu8SAAAAALIMOXAeyixhj8kf6Ug8GPtzpmkh"></script>
+      		  <noscript>
+      		  	
+	      		     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdlBu8SAAAAALIMOXAeyixhj8kf6Ug8GPtzpmkh"
+	      		         height="300" width="500" frameborder="0"></iframe><br>
+	      		     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+	      		     </textarea>
+	      		     <input type="hidden" name="recaptcha_response_field"
+	      		         value="manual_challenge">
+	      		
+      		  </noscript>
+      	</div>
+		<!-- Button -->
+		<div class="form-group">
+		    <button type="submit" class="btn btn-lg">Confess</button>
+		</div>
+
+	</fieldset>
+</form>
+
+
+
+{% endblock %}
