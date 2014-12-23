@@ -5,7 +5,7 @@
 + [fb.com/instaconfess](http://fb.com/instaconfess)
 + You are allowed to make use of this code in any fashion desirable.
 
-##Instructions
+##Instructions for self deployment
 + Add your credentials to example_local_settings.py
 + Save it as local_settings.py
 + run it on appengine
